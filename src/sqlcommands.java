@@ -199,7 +199,6 @@ public class sqlcommands {
                     }
                 }
 
-                //String data = "UPDATE users SET name = 'Alfred Schmidt', surname= 'Frankfurt' WHERE username = 'doruk';";
 
 
 
