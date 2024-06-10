@@ -4,12 +4,6 @@ import java.util.Scanner;
 public class Main {
     static final String URL = "jdbc:sqlite:db.db";
 
-
-
-    // "INSERT INTO Remuneraciones (Nombre, Apellido, Rut, Edad, Tiempo, Sueldo) VALUES ("+NAME+" ,"+LNAME, ID )+ ", " + AGE + ", " + TIME + ", " + SALARY + ");";
-
-    // static final String URL = "jdbc:sqlite:C:/Users/doruk/OneDrive/Documents/Collage life/BTC Staj/Staj/SQL/SQL Project 1/db.db";
-
     static void operator() throws SQLException {
 
 
@@ -23,7 +17,7 @@ public class Main {
 
         while (input < 5){
 
-            if (count == true){
+            if (count){
 
                 System.out.println("===========================================================================");
                 operator();
@@ -81,7 +75,6 @@ public class Main {
     static void driver() throws SQLException {
 
         Connection connection = null;
-        connection = DriverManager.getConnection(URL);
         Scanner sc = new Scanner(System.in);
 
         try{
@@ -89,8 +82,6 @@ public class Main {
             System.out.println("Connecting...");
             Statement statement = connection.createStatement();
 
-
-            boolean checkagain = false;
 
             try {
                 if (connection != null) {
