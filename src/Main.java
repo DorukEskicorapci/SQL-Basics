@@ -87,7 +87,6 @@ public class Main {
                 if (connection != null) {
                     System.out.println("Connected and running \n");
 
-                    //static final String URL = "jdbc:sqlite:db.db";
 
 
                     operator();
