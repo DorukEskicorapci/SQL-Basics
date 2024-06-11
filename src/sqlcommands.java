@@ -194,7 +194,7 @@ public class sqlcommands {
                         break;
                     }
                     default: {
-                        System.out.println("Invalid value");
+                        System.out.println("Invalid value!!! \n");
                         break;
                     }
                 }
