@@ -1,0 +1,4 @@
+Main and class files are under src folder.
+After opening src folder, main .java file can be accessed and executed by using IDE app.  
+
+The database that is processed in the application was named 'db.db' and it can be opened and manipulated using Database Managemant Softwares such as SQLITE. 
