@@ -156,9 +156,10 @@ public class sqlcommands {
                     case 1:{
                         System.out.print("\nEnter the new value: ");
                         String newvalue = sc.next();
-                        username_in = newvalue;
-                        data = "UPDATE users SET username = '" + newvalue + "' WHERE username = '" + username_in + "';";
+
+                        data = "UPDATE users SET username = '" + newvalue + "' WHERE username = " + username_in + ";";
                         statement.executeUpdate(data);
+                        username_in = newvalue;
                         System.out.println("Changed user: " + username_in);
                         System.out.print("New data summary: " + username_in + " " + name_in + " " + surname_in + " '" + age_in + "'" + "\n");
                         break;
@@ -166,7 +167,7 @@ public class sqlcommands {
                     case 2: {
                         System.out.print("\nEnter the new value: ");
                         String newvalue = sc.next();
-                        data = "UPDATE users SET name = '" + newvalue + "' WHERE username = '" + username_in + "';";
+                        data = "UPDATE users SET name = '" + newvalue + "' WHERE username = " + username_in + ";";
                         statement.executeUpdate(data);
                         name_in = newvalue;
                         System.out.println("Changed user: " + username_in);
@@ -176,7 +177,7 @@ public class sqlcommands {
                     case 3: {
                         System.out.print("\nEnter the new value: ");
                         String newvalue = sc.next();
-                        data = "UPDATE users SET surname = '" + newvalue + "' WHERE username = '" + username_in + "';";
+                        data = "UPDATE users SET surname = '" + newvalue + "' WHERE username = " + username_in + ";";
                         statement.executeUpdate(data);
                         surname_in = newvalue;
                         System.out.println("Changed user: " + username_in);
@@ -185,10 +186,10 @@ public class sqlcommands {
                     }
                     case 4: {
                         System.out.print("\nEnter the new value: ");
-                        String newvalue = sc.next();
-                        data = "UPDATE users SET age = '" + newvalue + "' WHERE username = '" + username_in + "';";
+                        Integer newvalue = sc.nextInt();
+                        data = "UPDATE users SET age = '" + newvalue + "' WHERE username = " + username_in + ";";
                         statement.executeUpdate(data);
-                        age_in = resultSet.getInt(newvalue);
+                        age_in = newvalue;
                         System.out.println("Changed user: " + username_in);
                         System.out.print("New data summary: " + username_in + " " + name_in + " " + surname_in + " '" + age_in + "'" + "\n");
                         break;

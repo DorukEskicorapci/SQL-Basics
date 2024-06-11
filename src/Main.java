@@ -61,7 +61,9 @@ public class Main {
                 sqlcommands.update(updateinput);
 
             } else if (input == 5) {
+
                 break;
+
             }
         }
 
@@ -90,6 +92,9 @@ public class Main {
 
 
                     operator();
+                    if (connection != null && connection.isClosed() != false) {
+                        connection.close();
+                    }
 
 
                 }
