@@ -1,3 +1,5 @@
+﻿# SQL Basics
+
 This project includes basics of SQL database manipulation using java. 
 
   - Data Insert
