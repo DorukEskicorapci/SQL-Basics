@@ -1,4 +1,5 @@
 The main and class files are under the src folder.
 After opening the src folder, the main .java file can be accessed and executed.
+To be able to run the code, you will need to have necessary drivers: slf4j, QLite JDBC
 
 The database that is processed in the application was named 'db.db' and it can be opened and manipulated using Database Managemant Softwares such as SQLite. 
